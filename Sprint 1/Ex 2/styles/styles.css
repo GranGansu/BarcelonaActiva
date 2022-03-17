@@ -1,3 +1,54 @@
+/* CONTENT */
+.contenido {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    background-color: gainsboro;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+aside p:first-child {
+    font-weight: bold;
+}
+
+content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gainsboro;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    background-color: #f7f7f7;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.tarjeta p:nth-child(2) {
+    color: white;
+    background: #d7baa1;
+    padding: 10px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.tarjeta p:nth-child(3) {
+    column-count: 2;
+}
+
+content div {
+    width: 48%;
+}
+
 .margin-bottom {
     margin-bottom: 5px;
 }
