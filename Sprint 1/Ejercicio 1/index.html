@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        max-width: 1200px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .container>div {
+        border: 10px solid black;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        height: 20px;
+    }
+
+    .primero .uno {
+        background-color: violet;
+        border: 10px solid gray
+    }
+
+    .primero .dos {
+        background-color: red;
+        border: 10px solid orange
+    }
+
+    .container .segundo {
+        flex-direction: row;
+    }
+
+    .segundo .item {
+        width: 100%;
+    }
+
+    .segundo .uno {
+        background-color: violet;
+        border: 10px solid gray
+    }
+
+    .segundo .dos {
+        background-color: red;
+        border: 10px solid orange
+    }
+
+    .tercero .item {
+        background-color: gainsboro
+    }
+
+    @media (max-width: 768px) {
+        .container .segundo {
+            border: 10px solid yellow;
+            flex-direction: column;
+        }
+
+        .segundo .item {
+            width: unset
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="primero">
+            <div class="item uno"></div>
+            <div class="item dos"></div>
+        </div>
+        <div class="segundo">
+            <div class="item uno"></div>
+            <div class="item dos"></div>
+        </div>
+        <div class="tercero">
+            <div class="item"></div>
+        </div>
+    </div>
+</body>
+
+</html>
