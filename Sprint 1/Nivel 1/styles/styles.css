@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: auto;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container>div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    gap: 10px;
+}
+
+.container>div>div {
+    padding: 10px
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.item div, .segundo .item {
+    min-height: 20px;
+    width: 100%
+}
+
+.container .segundo {
+    flex-direction: row;
+}
+
+/* @MEDIA */
+@media (min-width:120px) {
+
+    /* Movil */
+    .segundo .dos, .container>div>div, .container .segundo {
+        flex-direction: column;
+    }
+
+    .container .segundo {
+        background-color: orange;
+    }
+
+    .container>div, .container>div>div {
+        padding: 15px;
+        gap: 15px;
+    }
+}
+
+@media (min-width:641px) {
+
+    /* Tablet */
+    .primero .uno div:nth-child(1), .primero .uno div:nth-child(3) {
+        flex-grow: 2;
+    }
+
+    .primero .uno div:nth-child(2) {
+        flex-grow: 6;
+    }
+
+    .segundo .uno div:last-child {
+        flex-basis: 100%;
+    }
+
+    .segundo .dos {
+        justify-content: flex-start;
+    }
+
+    .segundo .item div {
+        flex-basis: 48%;
+    }
+
+    .segundo .dos div {
+        flex-basis: unset;
+    }
+
+    .container .segundo {
+        background-color: yellow;
+    }
+
+    .segundo .uno {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container>div>div {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1025px) {
+
+    /* Desktop */
+    .container .segundo {
+        background-color: black;
+        flex-direction: row;
+    }
+
+
+}
+
+/* COLORES */
+.primero .uno {
+    background-color: violet;
+}
+
+.primero .item div {
+    background-color: red;
+}
+
+.primero .dos {
+    background-color: #cccf2d;
+}
+
+.segundo .uno {
+    background-color: violet;
+}
+
+.segundo .dos {
+    background-color: #98ecff;
+}
+
+.segundo .uno div:last-child {
+    background-color: #170099;
+}
+
+.segundo .item div {
+    background-color: blue;
+}
+
+.tercero .item {
+    background-color: gainsboro
+}
